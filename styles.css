@@ -202,15 +202,6 @@ body {
   }
 }
 
-@keyframes glow {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 40px rgba(59, 130, 246, 0.5);
-  }
-}
-
 /* Animation utility classes */
 /* Longhand properties used deliberately: var() inside the `animation` shorthand's
    duration slot fails to parse in some Chromium builds, silently dropping the whole
@@ -394,15 +385,6 @@ a:hover {
 
 .brand:hover {
   transform: translateY(-2px);
-}
-
-.brand__mark {
-  width: 12px;
-  height: 12px;
-  border-radius: 3px;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
-  animation: glow 3s ease-in-out infinite;
 }
 
 .brand__text {
