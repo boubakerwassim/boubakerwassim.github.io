@@ -3,279 +3,554 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="QA Engineer portfolio for Wassim Boubaker - Selenium, Cypress, Postman, API Testing, Java, Python."
-    />
-    <title>Wassim Boubaker - QA Engineer</title>
+    <meta name="description" content="Wassim Boubaker - Senior QA Automation Engineer. Specialized in Playwright, Selenium, REST API testing. Based in Berlin, Germany." />
+    <meta name="keywords" content="QA Engineer, Test Automation, Playwright, Selenium, API Testing, Berlin" />
+    <meta name="author" content="Wassim Boubaker" />
+    <meta property="og:title" content="Wassim Boubaker - QA Automation Engineer" />
+    <meta property="og:description" content="Senior QA Automation Engineer with expertise in test automation frameworks and CI/CD pipelines." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0b0f19" />
+    <title>Wassim Boubaker - QA Automation Engineer | Berlin, Germany</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-EvBsWNA8LvXfkEfOIDAIsiMnghRaWf+c3uAcYew2yxUH2dmbNl0DluS6+6rN7V5eD7rm7EBwTwfgHDXYtwso0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
 
+    <!-- Animated background -->
+    <div class="background-animation" aria-hidden="true"></div>
+
     <header class="site-header">
-      <nav class="nav" aria-label="Primary">
-        <a class="brand" href="#top" aria-label="Home">
+      <nav class="nav" aria-label="Primary Navigation">
+        <a class="brand" href="#top" aria-label="Wassim Boubaker - Home">
           <span class="brand__mark" aria-hidden="true"></span>
           <span class="brand__text">WB</span>
         </a>
 
         <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-          <span class="sr-only">Toggle navigation</span>
+          <span class="sr-only">Toggle navigation menu</span>
           <span class="nav__toggleBars" aria-hidden="true"></span>
         </button>
 
         <div class="nav__links" id="nav-links">
-          <a href="#skills">Skills</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#experience">Experience</a>
-          <a class="cta" href="#contact">Contact</a>
+          <a href="#about" class="nav__link">About</a>
+          <a href="#skills" class="nav__link">Skills</a>
+          <a href="#certifications" class="nav__link">Certifications</a>
+          <a href="#experience" class="nav__link">Experience</a>
+          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#contact" class="nav__link nav__link--cta">Contact</a>
         </div>
       </nav>
     </header>
 
     <main id="content">
+      <!-- Hero Section -->
       <section class="hero" id="top">
-        <div class="container hero__grid">
-          <div class="hero__copy">
-            <p class="eyebrow">Quality Assurance</p>
-            <h1 class="hero__title">
-              Wassim <span class="gradient">Boubaker</span>
+        <div class="container hero__wrapper">
+          <div class="hero__content">
+            <p class="hero__eyebrow" data-animate="fade-in">QA Automation Engineer</p>
+            <h1 class="hero__title" data-animate="fade-in-up">
+              I build <span class="gradient">robust test automation</span> for modern products
             </h1>
-            <p class="hero__subtitle">QA Engineer</p>
-
-            <p class="hero__summary">
-              I build reliable test automation and API validation workflows with a focus on clarity,
-              coverage, and fast feedback.
+            
+            <p class="hero__subtitle" data-animate="fade-in-up">
+              Playwright • Selenium • REST API • CI/CD • Berlin, Germany
             </p>
 
-            <div class="hero__actions">
-              <a class="button button--primary" href="#contact">Get in touch</a>
-              <a class="button button--ghost" href="#experience">View experience</a>
-            </div>
-
-            <div class="hero__meta" aria-label="Highlights">
-              <div class="pill">Selenium</div>
-              <div class="pill">Cypress</div>
-              <div class="pill">Postman</div>
-              <div class="pill">API Testing</div>
-              <div class="pill">Java</div>
-              <div class="pill">Python</div>
-            </div>
-          </div>
-
-          <div class="hero__card" aria-label="Profile card">
-            <div class="card">
-              <div class="card__top">
-                <div class="avatar" aria-hidden="true">
-                  <span class="avatar__dot"></span>
-                </div>
-                <div>
-                  <p class="card__name">Wassim Boubaker</p>
-                  <p class="card__role">QA Engineer</p>
-                </div>
-              </div>
-
-              <dl class="card__dl">
-                <div class="card__row">
-                  <dt>Focus</dt>
-                  <dd>Automation &amp; API Quality</dd>
-                </div>
-                <div class="card__row">
-                  <dt>Tooling</dt>
-                  <dd>Selenium · Cypress · Postman</dd>
-                </div>
-                <div class="card__row">
-                  <dt>Languages</dt>
-                  <dd>Java · Python</dd>
-                </div>
-              </dl>
-
-              <div class="card__actions">
-                <a class="button button--soft" href="mailto:wassim.boubaker12@gmail.com">
-                  Email
-                </a>
-                <a class="button button--soft" href="#skills">Skills</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="skills" aria-label="Skills">
-        <div class="container">
-          <div class="section__head">
-            <h2>Skills</h2>
-            <p>Modern QA tooling for UI and API testing.</p>
-          </div>
-
-          <div class="grid">
-            <article class="tile">
-              <h3>Selenium</h3>
-              <p>UI automation with robust locators and maintainable suites.</p>
-            </article>
-            <article class="tile">
-              <h3>Cypress</h3>
-              <p>Fast end-to-end testing with stable, developer-friendly workflows.</p>
-            </article>
-            <article class="tile">
-              <h3>Postman</h3>
-              <p>Collections, environments, and automated API checks.</p>
-            </article>
-            <article class="tile">
-              <h3>API Testing</h3>
-              <p>Validation of contracts, edge cases, and regression coverage.</p>
-            </article>
-            <article class="tile">
-              <h3>Java</h3>
-              <p>Test frameworks and automation utilities for scalable suites.</p>
-            </article>
-            <article class="tile">
-              <h3>Python</h3>
-              <p>Automation scripts and API checks for fast feedback loops.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="certifications" aria-label="Certifications">
-        <div class="container">
-          <div class="section__head">
-            <h2>Certifications</h2>
-            <p>Professional credentials supporting test discipline and cloud fundamentals.</p>
-          </div>
-
-          <div class="list">
-            <div class="list__item">
-              <div class="list__title">ISTQB CTFL v4.0</div>
-              <div class="list__meta">Certified Tester Foundation Level</div>
-            </div>
-            <div class="list__item">
-              <div class="list__title">AWS Solutions Architect</div>
-              <div class="list__meta">Architecture fundamentals on AWS</div>
-            </div>
-            <div class="list__item">
-              <div class="list__title">Oracle Java SE 17</div>
-              <div class="list__meta">Java development fundamentals</div>
-            </div>
-            <div class="list__item">
-              <div class="list__title">Spring Certified Professional</div>
-              <div class="list__meta">Spring ecosystem and best practices</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="experience" aria-label="Experience">
-        <div class="container">
-          <div class="section__head">
-            <h2>Experience</h2>
-            <p>Building quality into delivery with pragmatic, measurable testing.</p>
-          </div>
-
-          <article class="experience">
-            <div class="experience__top">
-              <div>
-                <h3 class="experience__role">QA Engineer (Full-time)</h3>
-                <p class="experience__company">ITGate Group — Sousse, Tunisia</p>
-              </div>
-              <div class="experience__badge">01/01/2025 – 30/10/2025</div>
-            </div>
-
-            <ul class="experience__bullets">
-              <li>Designed and executed test cases for web and API features.</li>
-              <li>Improved regression confidence using automation and repeatable checks.</li>
-              <li>Collaborated with developers to reproduce issues and verify fixes.</li>
-            </ul>
-          </article>
-
-          <article class="experience">
-            <div class="experience__top">
-              <div>
-                <h3 class="experience__role">QA Engineer (Internship)</h3>
-                <p class="experience__company">ITGate Group — Sousse, Tunisia</p>
-              </div>
-              <div class="experience__badge">01/2024 – 06/2024</div>
-            </div>
-
-            <ul class="experience__bullets">
-              <li>Supported functional testing and regression checks across releases.</li>
-              <li>Helped document test scenarios and report defects with clear reproduction steps.</li>
-              <li>Assisted with API testing using Postman collections and environments.</li>
-            </ul>
-          </article>
-
-          <article class="experience">
-            <div class="experience__top">
-              <div>
-                <h3 class="experience__role">Back-End Developer (Internship)</h3>
-                <p class="experience__company">ESIP — Gafsa, Tunisia</p>
-              </div>
-              <div class="experience__badge">01/2022 – 06/2022</div>
-            </div>
-
-            <ul class="experience__bullets">
-              <li>Contributed to backend features and integrations in a team environment.</li>
-              <li>Implemented and verified endpoints and data flows during development.</li>
-              <li>Collaborated on debugging and improving application stability.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section--contact" id="contact" aria-label="Contact">
-        <div class="container contact">
-          <div class="contact__copy">
-            <h2>Contact</h2>
-            <p>
-              Interested in a QA engineer who cares about product quality and fast feedback? Let’s
-              talk.
+            <p class="hero__description" data-animate="fade-in-up">
+              QA Engineer with 3+ years of experience designing and implementing reliable test automation frameworks. Passionate about building scalable testing solutions, improving software quality, and enabling faster feedback loops in Agile environments.
             </p>
-          </div>
 
-          <div class="contact__card">
-            <div class="contact__line">
-              <span class="contact__label">Email</span>
-              <a class="contact__value" href="mailto:wassim.boubaker12@gmail.com">
-                wassim.boubaker12@gmail.com
+            <div class="hero__cta-group" data-animate="fade-in-up">
+              <a href="#contact" class="button button--primary">
+                <i class="fas fa-envelope"></i>
+                Get in Touch
+              </a>
+              <a href="#experience" class="button button--secondary">
+                <i class="fas fa-arrow-down"></i>
+                View Experience
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="button button--ghost" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/wassim-boubaker" target="_blank" rel="noopener noreferrer" class="button button--ghost" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
               </a>
             </div>
-            <div class="contact__actions" aria-label="Social links">
-              <a
-                class="contact__btn contact__btn--linkedin"
-                href="https://www.linkedin.com/in/wassim-boubaker"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="contact__icon"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8.34 18.34V10.9H5.86V18.34H8.34ZM7.1 9.86C7.96 9.86 8.66 9.16 8.66 8.3C8.66 7.44 7.96 6.74 7.1 6.74C6.23 6.74 5.54 7.44 5.54 8.3C5.54 9.16 6.23 9.86 7.1 9.86ZM18.34 18.34V14.28C18.34 12.2 17.92 10.62 15.49 10.62C14.32 10.62 13.54 11.26 13.22 11.86H13.19V10.9H10.82V18.34H13.29V14.65C13.29 13.68 13.47 12.75 14.67 12.75C15.85 12.75 15.87 13.86 15.87 14.71V18.34H18.34Z"
-                  />
-                </svg>
-                <span>LinkedIn</span>
-              </a>
-            </div>
-            <div class="contact__hint">
-              Prefer email — I typically reply within 24–48 hours.
+
+            <div class="hero__stats">
+              <div class="stat" data-animate="fade-in-up">
+                <div class="stat__number">3+</div>
+                <div class="stat__label">Years Experience</div>
+              </div>
+              <div class="stat" data-animate="fade-in-up">
+                <div class="stat__number">5+</div>
+                <div class="stat__label">Tools Mastered</div>
+              </div>
+              <div class="stat" data-animate="fade-in-up">
+                <div class="stat__number">4</div>
+                <div class="stat__label">Certifications</div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section about-section" id="about" aria-label="About Me">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title" data-animate="fade-in-up">About Me</h2>
+            <p class="section__subtitle" data-animate="fade-in-up">Crafting quality through automation</p>
+          </div>
+
+          <div class="about-content" data-animate="fade-in-up">
+            <div class="about-card glass-card">
+              <i class="fas fa-robot about-icon"></i>
+              <h3>Test Automation</h3>
+              <p>Specialized in building scalable test automation frameworks using Playwright, Selenium, and Cypress. I focus on maintainability, speed, and reliability to ensure comprehensive test coverage.</p>
+            </div>
+            <div class="about-card glass-card">
+              <i class="fas fa-code about-icon"></i>
+              <h3>API & Backend Testing</h3>
+              <p>Expert in REST API testing with REST Assured and Postman. I validate contracts, edge cases, and ensure robust API quality across CI/CD pipelines using GitLab, Jenkins, and GitHub Actions.</p>
+            </div>
+            <div class="about-card glass-card">
+              <i class="fas fa-cloud about-icon"></i>
+              <h3>Cloud & Infrastructure</h3>
+              <p>Experienced with Docker containerization, AWS fundamentals, and Microsoft Azure. I understand cloud deployment patterns and how testing integrates into modern DevOps workflows.</p>
+            </div>
+          </div>
+
+          <div class="about-highlight glass-card" data-animate="fade-in-up">
+            <p><strong>Currently based in Berlin, Germany</strong> and actively open to QA engineering opportunities with forward-thinking teams that value quality, automation, and continuous improvement.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="section skills-section" id="skills" aria-label="Technical Skills">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title" data-animate="fade-in-up">Technical Stack</h2>
+            <p class="section__subtitle" data-animate="fade-in-up">Tools and technologies I work with daily</p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Test Automation -->
+            <div class="skill-category" data-animate="fade-in-up">
+              <div class="skill-category__header">
+                <i class="fas fa-check-double"></i>
+                <h3>Test Automation</h3>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag">Playwright</span>
+                <span class="skill-tag">Selenium</span>
+                <span class="skill-tag">Cypress</span>
+                <span class="skill-tag">TestNG</span>
+                <span class="skill-tag">JUnit</span>
+              </div>
+            </div>
+
+            <!-- API Testing -->
+            <div class="skill-category" data-animate="fade-in-up">
+              <div class="skill-category__header">
+                <i class="fas fa-network-wired"></i>
+                <h3>API Testing</h3>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag">REST Assured</span>
+                <span class="skill-tag">Postman</span>
+                <span class="skill-tag">REST API</span>
+                <span class="skill-tag">JSON</span>
+                <span class="skill-tag">XML</span>
+              </div>
+            </div>
+
+            <!-- Programming Languages -->
+            <div class="skill-category" data-animate="fade-in-up">
+              <div class="skill-category__header">
+                <i class="fas fa-code"></i>
+                <h3>Programming Languages</h3>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">SQL</span>
+              </div>
+            </div>
+
+            <!-- CI/CD & DevOps -->
+            <div class="skill-category" data-animate="fade-in-up">
+              <div class="skill-category__header">
+                <i class="fas fa-cogs"></i>
+                <h3>CI/CD & DevOps</h3>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag">Jenkins</span>
+                <span class="skill-tag">GitLab CI</span>
+                <span class="skill-tag">GitHub Actions</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Maven</span>
+              </div>
+            </div>
+
+            <!-- Version Control -->
+            <div class="skill-category" data-animate="fade-in-up">
+              <div class="skill-category__header">
+                <i class="fas fa-code-branch"></i>
+                <h3>Version Control</h3>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitLab</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Branching Strategy</span>
+              </div>
+            </div>
+
+            <!-- Cloud & Tools -->
+            <div class="skill-category" data-animate="fade-in-up">
+              <div class="skill-category__header">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud & Tools</h3>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Microsoft Azure</span>
+                <span class="skill-tag">Jira</span>
+                <span class="skill-tag">Jira Xray</span>
+              </div>
+            </div>
+
+            <!-- Methodologies -->
+            <div class="skill-category" data-animate="fade-in-up">
+              <div class="skill-category__header">
+                <i class="fas fa-tasks"></i>
+                <h3>Methodologies</h3>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag">Agile Scrum</span>
+                <span class="skill-tag">Test-Driven</span>
+                <span class="skill-tag">BDD</span>
+                <span class="skill-tag">Page Object Model</span>
+              </div>
+            </div>
+
+            <!-- Testing Types -->
+            <div class="skill-category" data-animate="fade-in-up">
+              <div class="skill-category__header">
+                <i class="fas fa-flask"></i>
+                <h3>Testing Types</h3>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag">Manual Testing</span>
+                <span class="skill-tag">UI Automation</span>
+                <span class="skill-tag">API Testing</span>
+                <span class="skill-tag">Regression Testing</span>
+                <span class="skill-tag">Performance Testing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section class="section certifications-section" id="certifications" aria-label="Professional Certifications">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title" data-animate="fade-in-up">Certifications</h2>
+            <p class="section__subtitle" data-animate="fade-in-up">Professional credentials validating expertise</p>
+          </div>
+
+          <div class="certifications-grid">
+            <div class="cert-card glass-card" data-animate="fade-in-up">
+              <div class="cert-card__icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="cert-card__content">
+                <h3 class="cert-card__title">ISTQB CTFL v4.0</h3>
+                <p class="cert-card__subtitle">Certified Tester Foundation Level</p>
+                <p class="cert-card__desc">International Software Testing Qualifications Board certification demonstrating professional testing competency.</p>
+              </div>
+            </div>
+
+            <div class="cert-card glass-card" data-animate="fade-in-up">
+              <div class="cert-card__icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="cert-card__content">
+                <h3 class="cert-card__title">AWS Certified Solutions Architect</h3>
+                <p class="cert-card__subtitle">Associate Level</p>
+                <p class="cert-card__desc">Cloud architecture expertise with proficiency in AWS services, deployment patterns, and infrastructure.</p>
+              </div>
+            </div>
+
+            <div class="cert-card glass-card" data-animate="fade-in-up">
+              <div class="cert-card__icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="cert-card__content">
+                <h3 class="cert-card__title">Oracle Certified Professional</h3>
+                <p class="cert-card__subtitle">Java SE 17</p>
+                <p class="cert-card__desc">Advanced Java programming proficiency including object-oriented design, collections, and concurrency.</p>
+              </div>
+            </div>
+
+            <div class="cert-card glass-card" data-animate="fade-in-up">
+              <div class="cert-card__icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="cert-card__content">
+                <h3 class="cert-card__title">Spring Certified Professional</h3>
+                <p class="cert-card__subtitle">Spring Ecosystem Expert</p>
+                <p class="cert-card__desc">Expertise in Spring Framework including dependency injection, AOP, and Spring Boot applications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="section experience-section" id="experience" aria-label="Professional Experience">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title" data-animate="fade-in-up">Experience</h2>
+            <p class="section__subtitle" data-animate="fade-in-up">Building quality through strategic testing</p>
+          </div>
+
+          <div class="experience-timeline">
+            <div class="timeline-item" data-animate="fade-in-up">
+              <div class="timeline-content glass-card">
+                <div class="timeline-header">
+                  <h3 class="timeline-role">QA Engineer</h3>
+                  <span class="timeline-company">ITGate Group</span>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date">
+                    <i class="fas fa-calendar"></i>
+                    January 2025 – Present
+                  </span>
+                  <span class="timeline-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Sousse, Tunisia (Remote)
+                  </span>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>Design and execute comprehensive test cases for web and mobile applications</li>
+                  <li>Develop and maintain UI automation frameworks using Playwright and Selenium</li>
+                  <li>Perform REST API testing with REST Assured and validate API contracts</li>
+                  <li>Implement CI/CD pipeline tests with GitLab CI and Jenkins</li>
+                  <li>Collaborate with development team in Agile Scrum environment using Jira Xray</li>
+                  <li>Improve test coverage and reduce regression issues through strategic automation</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-animate="fade-in-up">
+              <div class="timeline-content glass-card">
+                <div class="timeline-header">
+                  <h3 class="timeline-role">QA Engineer (Internship)</h3>
+                  <span class="timeline-company">ITGate Group</span>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date">
+                    <i class="fas fa-calendar"></i>
+                    January 2024 – June 2024
+                  </span>
+                  <span class="timeline-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Sousse, Tunisia
+                  </span>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>Supported manual testing and regression checks across application releases</li>
+                  <li>Documented test scenarios and reported defects with clear reproduction steps</li>
+                  <li>Assisted with API testing using Postman collections and environments</li>
+                  <li>Participated in test planning and strategy discussions with QA team</li>
+                  <li>Collaborated on test automation script development using Selenium</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-animate="fade-in-up">
+              <div class="timeline-content glass-card">
+                <div class="timeline-header">
+                  <h3 class="timeline-role">Back-End Developer (Internship)</h3>
+                  <span class="timeline-company">ESIP</span>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date">
+                    <i class="fas fa-calendar"></i>
+                    January 2022 – June 2022
+                  </span>
+                  <span class="timeline-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Gafsa, Tunisia
+                  </span>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>Developed and tested backend features using Java and Spring Framework</li>
+                  <li>Implemented REST API endpoints and validated data flows</li>
+                  <li>Debugged and improved application stability in team environment</li>
+                  <li>Wrote unit tests and integration tests to ensure code quality</li>
+                  <li>Collaborated with team members on software development best practices</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section projects-section" id="projects" aria-label="Featured Projects">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title" data-animate="fade-in-up">Featured Projects</h2>
+            <p class="section__subtitle" data-animate="fade-in-up">Showcasing test automation expertise</p>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card glass-card" data-animate="fade-in-up">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+                <h3 class="project-title">Playwright Test Automation Framework</h3>
+              </div>
+              <p class="project-description">
+                Comprehensive end-to-end test automation framework built with Playwright, featuring Page Object Model pattern, parallel execution, and detailed reporting.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Playwright</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">POM</span>
+                <span class="project-tag">CI/CD</span>
+              </div>
+              <a href="#" class="project-link">
+                View Project <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="project-card glass-card" data-animate="fade-in-up">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fas fa-flask"></i>
+                </div>
+                <h3 class="project-title">Selenium Java Framework</h3>
+              </div>
+              <p class="project-description">
+                Enterprise-grade Selenium automation framework in Java with TestNG integration, robust error handling, and comprehensive test reports.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Selenium</span>
+                <span class="project-tag">Java</span>
+                <span class="project-tag">TestNG</span>
+                <span class="project-tag">Maven</span>
+              </div>
+              <a href="#" class="project-link">
+                View Project <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="project-card glass-card" data-animate="fade-in-up">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fas fa-network-wired"></i>
+                </div>
+                <h3 class="project-title">REST API Testing Suite</h3>
+              </div>
+              <p class="project-description">
+                Complete REST API test suite using REST Assured with contract testing, performance validation, and CI/CD pipeline integration.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">REST Assured</span>
+                <span class="project-tag">Java</span>
+                <span class="project-tag">API Testing</span>
+                <span class="project-tag">Jenkins</span>
+              </div>
+              <a href="#" class="project-link">
+                View Project <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="project-card glass-card" data-animate="fade-in-up">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fas fa-spring"></i>
+                </div>
+                <h3 class="project-title">Spring Boot Testing</h3>
+              </div>
+              <p class="project-description">
+                Spring Boot application with comprehensive unit and integration tests, MockMvc testing, and database test fixtures.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Spring Boot</span>
+                <span class="project-tag">JUnit</span>
+                <span class="project-tag">Mockito</span>
+                <span class="project-tag">Integration Tests</span>
+              </div>
+              <a href="#" class="project-link">
+                View Project <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section contact-section" id="contact" aria-label="Get In Touch">
+       <div class="container">
+         <div class="section__header">
+           <h2 class="section__title" data-animate="fade-in-up">Let's Connect</h2>
+           <p class="section__subtitle" data-animate="fade-in-up">I'm always interested in discussing QA automation and testing strategies</p>
+         </div>
+
+         <div class="contact-content" data-animate="fade-in-up">
+           <div class="contact-card glass-card">
+             <h3>Get In Touch</h3>
+             <p>I'm actively seeking new opportunities to leverage my QA expertise. Whether you want to discuss test automation strategies, collaborate on projects, or just say hello—feel free to reach out!</p>
+              
+             <div class="contact-methods">
+               <a href="mailto:wassim.boubaker12@gmail.com" class="contact-method">
+                 <i class="fas fa-envelope"></i>
+                 <div>
+                   <div class="contact-method__label">Email</div>
+                   <div class="contact-method__value">wassim.boubaker12@gmail.com</div>
+                 </div>
+               </a>
+                
+               <a href="https://linkedin.com/in/wassim-boubaker" target="_blank" rel="noopener noreferrer" class="contact-method">
+                 <i class="fab fa-linkedin"></i>
+                 <div>
+                   <div class="contact-method__label">LinkedIn</div>
+                   <div class="contact-method__value">View Profile</div>
+                 </div>
+               </a>
+                
+               <a href="https://github.com/boubakerwassim" target="_blank" rel="noopener noreferrer" class="contact-method">
+                 <i class="fab fa-github"></i>
+                 <div>
+                   <div class="contact-method__label">GitHub</div>
+                   <div class="contact-method__value">View Repositories</div>
+                 </div>
+               </a>
+             </div>
+
+             <p class="contact-note">
+               <i class="fas fa-clock"></i>
+               I typically respond to emails within 24 hours
+             </p>
+           </div>
+         </div>
+       </div>
       </section>
     </main>
 
