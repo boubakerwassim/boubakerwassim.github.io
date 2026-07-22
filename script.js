@@ -59,7 +59,10 @@ const observerOptions = {
 const observerCallback = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.style.animation = `${entry.target.dataset.animate} var(--transition-base) ease-out forwards`;
+      entry.target.style.animationName = entry.target.dataset.animate;
+      entry.target.style.animationDuration = 'var(--transition-base)';
+      entry.target.style.animationTimingFunction = 'ease-out';
+      entry.target.style.animationFillMode = 'forwards';
       observer.unobserve(entry.target);
     }
   });

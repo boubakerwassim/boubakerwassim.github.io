@@ -211,18 +211,30 @@ body {
 }
 
 /* Animation utility classes */
+/* Longhand properties used deliberately: var() inside the `animation` shorthand's
+   duration slot fails to parse in some Chromium builds, silently dropping the whole
+   declaration (animation-name: none) and leaving content stuck at opacity: 0. */
 [data-animate="fade-in"] {
-  animation: fade-in var(--transition-base) ease-out forwards;
+  animation-name: fade-in;
+  animation-duration: var(--transition-base);
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
 [data-animate="fade-in-up"] {
-  animation: fade-in-up var(--transition-base) ease-out forwards;
+  animation-name: fade-in-up;
+  animation-duration: var(--transition-base);
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
 [data-animate="fade-in-down"] {
-  animation: fade-in-down var(--transition-base) ease-out forwards;
+  animation-name: fade-in-down;
+  animation-duration: var(--transition-base);
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
