@@ -1,10 +1,12 @@
-# Wassim Boubaker — QA Engineer Portfolio
+# Wassim Boubaker — Junior SOC Analyst Portfolio
 
-Dark, modern, single-page portfolio website (static HTML/CSS/JS).
+Personal portfolio of Wassim Boubaker — Junior SOC Analyst / Cybersecurity (M.Sc.), based in Berlin.
+
+**Live site:** https://boubakerwassim.github.io
+
+Focus: SOC lab with Wazuh (SIEM), log analysis, incident detection, penetration testing and 1st level IT support.
 
 ## Run locally
-
-Option A (Python):
 
 ```bash
 python3 -m http.server 5173
@@ -12,15 +14,9 @@ python3 -m http.server 5173
 
 Then open `http://localhost:5173`.
 
-Option B (Node):
+## Files
 
-```bash
-npx serve .
-```
-
-## Edit content
-
-- Main content: `index.html`
-- Styling: `styles.css`
-- Small interactions (mobile nav + footer year): `script.js`
-
+- `index.html` — content
+- `styles.css` — styling
+- `script.js` — mobile navigation and footer year
+- `og-image.jpg` — link preview image (LinkedIn, etc.)
